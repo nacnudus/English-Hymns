@@ -1,14 +1,12 @@
 \version "2.18.2"
-
 \layout {
-  %#(layout-set-staff-size 16)
   indent = 0.0\cm
   ragged-right = ##f
+  %#(layout-set-staff-size 16)
   \context {
     \Score
     % **** Turns off bar numbering
     \remove "Bar_number_engraver"
-    %\consists #Lyric_text_align_engraver
   }
   \context {
     \Staff

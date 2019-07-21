@@ -13,22 +13,12 @@ Musicam Ecclesiae - sites.google.com/site/musicamecclesiae
 top = \markup {
   \fill-line {
     \column {
-      \line {\caps{down ampney} 6 6 11 D}
+      \line {\caps{nottingham} 77 77}
     }
     \column{
-      \line {Ralph Vaughan Williams 1872&ndash;1958}
+      \line {Wenzel Müller 1747&ndash;1835}
       % \line {\italic "The English Hymnal," 1906}
       \vspace #0.5
-    }
-  }
-}
-
-bottom = \markup  {
-  \fill-line {
-    \null
-    \right-column {
-      \line {Italian, \caps{Bianco da Siena} d 1434}
-      \line {\italic{Tr} \caps{R. F. Littledale} 1867}
     }
   }
 }
@@ -46,125 +36,102 @@ breathmark = {
 
 
 global = {
-  \key d \major
-  \time 4/4
+  \key g \major
+  \time 3/4
   \autoBeamOff
   \set Staff.midiInstrument = "church organ"
 }
 
 melody = \relative c' {
   \global
-  d2 e4 fs |
-  a2 b |
-  a1 \bar "||"
+  g'2 g4 |
+  fs2 d4 |
+  c'2 c4 |
+  b2. \bar "||"
 
-  a2 b4 a |
-  d( cs) b2 |
-  a2 \bar "||" \break
+  d2 b4 |
+  d( c) a | \break
+  g2 b4 |
+  a2. \bar "||"
 
-  a2 |
-  b4 a g fs |
-  e d e fs8[ g] |
-  e2 d^\fermata \bar "||"
+  g2 g4 |
+  fs4.( e8) d4 |
+  c'2 c4 |  \break
+  b2. \bar "||"
 
-  d'2 cs4 b | \break
-  a2 b |
-  a1 \bar "||"
-
-  c2 b4 a |
-  g2 fs |
-  e \bar "||"
-
-  e2 | \break
-  a4 b a g |
-  fs d e fs8[ g] |
-  e2 d^\fermata \bar "||"
+  d2 b4 |
+  a( c) e |
+  g,2 fs4 |
+  g2. \bar "||"
 }
 
 alto = \relative c' {
   \global
-  a2 a4 d |
-  d( cs) b( cs) |
-  d1 \bar "||"
+  d2 d4 |
+  d2 d4 |
+  d2 fs4 |
+  g2. \bar "||"
 
-  fs2 fs4 e |
-  d( e) d2 |
-  cs \bar "||"
+  g2 g4 |
+  e2 d4 |
+  d2 g4 |
+  fs2. \bar "||"
 
-  d2 |
-  d4 cs d d |
-  b d d d |
-  d( cs) d2 \bar "||"
+  g2 g4 |
+  fs4.( e8) d4 |
+  d2 fs4 |
+  g2. \bar "||"
 
-  fs2 fs4 d |
-  fs2 e4( d) |
-  cs1 \bar "||"
-
-  e2 d4 d |
-  b( cs) d2 |
-  a2 \bar "||"
-
-  cs |
-  d4 d cs d8[ e] |
-  a,4 d d d |
-  d( cs) d2 \bar "||"
+  d4( g) f |
+  e2 e4 |
+  d2 c4 |
+  b2. \bar "||"
 }
 
 tenor = \relative c {
   \global
-  fs2 a4 d, |
-  e2 g4( e) |
-  fs1 |
-  a2 d,4 e |
-  fs( a) a( gs) |
-  a2 \bar "||"
+  b'2 b4 |
+  a2 fs4 |
+  fs4( a) d |
+  d2. \bar "||"
 
-  fs2 |
-  g4 e g a |
-  g a b b |
-  a4.( g8) fs2 \bar "||"
+  d4( b) b |
+  a2 c4 |
+  b2 d4 |
+  d2. \bar "||"
 
-  b2 a4 b |
-  d( cs) b2 |
-  cs1 \bar "||"
+  b4( d) b |
+  c4.( b8) a[ g] |
+  fs4( a) d |
+  d2. \bar "||"
 
-  g4( a) b fs |
-  g2 a4( b) |
-  cs2 \bar "||"
-
-  a2 |
-  a4 g e b' |
-  a a b g |
-  a4.( g8) fs2 \bar "||"
+  b2 d4 |
+  c2 a4 |
+  b2 a4 |
+  g2. \bar "||"
 }
 
 bass = \relative c {
   \global
-  d2 cs4 d |
-  a2 g |
-  d'1 \bar "||"
+  g'2 g4 |
+  d2 d4 |
+  d4( fs) d |
+  g2. \bar "||"
 
-  d2 d4 cs |
-  b( cs) e2 |
-  a,2 \bar "||"
+  b4( g) g |
+  a2 fs4 |
+  g4( b) g |
+  d2. \bar "||"
 
-  d2 |
-  g,4 a b d |
-  g fs g e |
-  a,2 d_\fermata \bar "||"
+  g4( b) g |
+  a4.( g8) fs[ e] |
+  d4( fs4) d4 |
+  g2. \bar "||"
 
-  b' fs4 g |
-  d( fs) gs2 |
-  a1 \bar "||"
-
-  e4( fs) g d |
-  e2 fs4( g) |
-  a2_\fermata \bar "||"
-
-  a,4( g) |
-  fs g a d8[ cs] |
-  d4 fs g e |
-  a,2 d_\fermata \bar "||"
+  g2 gs4 |
+  a2 c,4 |
+  d2 d4 |
+  g2. \bar "||"
 }
 
 \book {
